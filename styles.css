@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(26, 25, 25);
+    height: 100px;
+    position: relative;
+}
+
+nav img {
+    position: absolute;
+    left: 150px;
+    height: 100px;
+}
+
+
+.nav-links { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: white;
+    list-style: none;
+    margin-left: 350px;
+}
+
+.nav-links li {
+    margin: 30px;
+}
+
+.maleSuit {
+    height: 89.7%;
+    position: absolute;
+    right: 0px;
+    width: 40%;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Contrail One', cursive;
+}
+
+#firstImpression {
+    display: flex;
+    margin-left: 20%;
+    margin-top: 325px;
+    height: 100vh;
+    flex-direction: column;
+    width: 300px;
+    font-size: 22px;
+}
+
+#firstImpression p {
+    width: 450px;
+}
