@@ -5,36 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link href="images/kingsman-logo.png" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="images/companyLogo.jpg" rel="Kingsman Logo">
+                <img src="images/kingsman-logo.png" rel="kingsman logo">
             </div>
             <ul class="nav-links">
-                <li><strong>HOME</strong></li>
-                <li><strong>SUIT</strong></li>
-                <li><strong>SERVICE</strong></li>
-                <li><strong>CONTACT</strong></li>
+                <li>
+                    <a href="#"><strong>HOME</a></strong>
+                </li>
+
+                <li class="wrapper">
+                    <a href="#"><strong>SUITS</a></strong>
+                    <div class="drop-down">
+                        <ul>
+                            <li>MEN</li>
+                            <li>WOMEN</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="wrapper">
+                    <a href="#"><strong>ACCESSORIES</a></strong>
+                    <div class="drop-down">
+                        <ul>
+                            <li>MEN</li>
+                            <li>WOMEN</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="wrapper">
+                    <a href="#"><strong>TALORING</a></strong>
+                    <div class="drop-down">
+                        <ul>
+                            <li>PRICING</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#"><strong>ABOUT US</a></strong>
+                </li>
             </ul>
         </nav>
 
-        <div>
-            <img class="maleSuit" src="images/maleSuit.jpg" alt="Male wearing a suit while smoking">
-        </div>
-        <div id="firstImpression">
-            <h1>KINGSMAN</h1><br>
-            <h2>COMING SOON</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi vero perspiciatis sapiente minima, facere nemo aperiam sint eligendi soluta ducimus pariatur voluptates, culpa ea adipisci officia quis doloremque vitae.</p>
-        </div>
+        <section class="main-wrapper">
+            <div class="firstImpression">
+                <h1>KINGSMAN</h1><br>
+                <h2>COMING SOON</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi vero perspiciatis sapiente minima, facere nemo aperiam sint eligendi soluta ducimus pariatur voluptates, culpa ea adipisci officia quis doloremque vitae.</p>
+            </div>
+            
+            <div class="maleSuit-parent">
+                <!-- <div class="btn-wrapper"> -->
+                    <!-- <button class="left-arrow-icon" type="button"> -->
+                    <img class="left-arrow-icon" src="images/arrow-icon.png" rel="">
+                    <!-- </button> -->
+                    <img class="maleSuit" src="images/maleSuit.jpg" alt="Male wearing suit while smoking">
+                    <!-- <button class="right-arrow-icon" type="button"> -->
+                    <img class="right-arrow-icon" src="images/arrow-icon.png" rel="">
+                    <!-- </button> -->
+
+                    <!-- Do not think button is neccessary here. Arrow img can be added into addEventListener (click) in JS -->
+                </div>
+            </div>
+        </section>
+
     </header>
     
 
     <main>
         
     </main>
-
+    
     <footer>
         
     </footer>
