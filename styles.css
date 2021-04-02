@@ -4,63 +4,82 @@
     box-sizing: border-box;
 }
 
-
-
-/*          =====  NAVIGATION BAR  =====           */
-
 header {
     height: 100vh;
 }
 
+
+/*          =====  NAVIGATION BAR  =====           */
+
 nav {
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
     display: flex;
-    background-color: rgb(26, 25, 25);
-    height: 100px;
-    width: 100%;
-    position: relative;
 }
 
-nav img {
-    position: absolute;
-    left: 150px;
-    height: 100px;
+.logo img {
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 190px;
 }
 
-.nav-links { 
+.navigation {
+    height: 10vh;
+    color: white;
     display: flex;
-    justify-content: flex-start;
+    width: 50vw;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    color: white;
+    position: relative;
+    color: black;
+}
+
+.navigation h2,
+.navigation li {
+    cursor: pointer;
+}
+
+.for-drop-down ul li {
+    padding: 10px;
+    transform: translateY(-10px);
+    transition: ease 0.6s all;
+    opacity: 0;
+    transition: ease 0.5s all;
+}
+
+.navigation ul {
+    position: absolute;
     list-style: none;
-    margin-left: 350px;
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
 }
 
-.nav-links li {
-    margin: 30px;
-    padding: 15px;
+.navigation h2:hover,
+.for-drop-down li:hover {
+    color: rgb(145, 145, 145);
 }
 
-.nav-links {
-    width: 100%;
+.for-drop-down h2:hover + ul li {
+    opacity: 1;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: white;
-}
+
+/*          =====  FIRST IMPRESSION TO USERS  =====         */
 
 h1 {
     font-size: 50px;
     font-family: 'Contrail One', cursive;
 }
-
-
-
-/*          =====  FIRST IMPRESSION TO USERS  =====         */
-
 .main-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     height: 90vh;
@@ -84,7 +103,7 @@ h1 {
     justify-content: center;
     height: 70vh;
     width: 25vw;
-    box-shadow: 0px 0px 150px;
+    box-shadow: 0px 0px 40px;
     border-radius: 15px;
 }
 /* .btn-wrap {
