@@ -36,17 +36,22 @@ nav {
     color: black;
 }
 
-.navigation h2,
-.navigation li {
+.navigation h2 {
     cursor: pointer;
+    font-size: 15px;
+}
+
+
+.navigation li {
+    pointer-events: none;
 }
 
 .for-drop-down ul li {
     padding: 10px;
-    transform: translateY(-10px);
-    transition: ease 0.6s all;
+    transition: ease 0.4s all;
     opacity: 0;
-    transition: ease 0.5s all;
+    margin: 10px;
+    width: 250px;
 }
 
 .navigation ul {
@@ -66,10 +71,11 @@ nav {
     color: rgb(145, 145, 145);
 }
 
-.for-drop-down h2:hover + ul li {
+.for-drop-down h2:hover + ul li{
     opacity: 1;
+    transform: translateY(10px);
+    pointer-events: all;
 }
-
 
 /*          =====  FIRST IMPRESSION TO USERS  =====         */
 
